@@ -22,11 +22,13 @@ public class Comparison {
             try {
                 Statement stmt = con.createStatement();
                 ResultSet rs = stmt.executeQuery("select * from cwe_tbl as a inner join cwe_stride_tbl as b " +
-                        "on a.cwe_id = b.cwe_id where a.cert_id = '"+i+"'");
+                        "on a.cwe_id = b.cwe_id inner join stride_tbl as c on b.security_control_id = c.security_control_id where a.cert_id = '"+i+"'");
                 while (rs.next()) {
-                    System.out.println(rs.getString(1) + " " + rs.getString(2)+ " " +
+                    System.out.println(i + " " + rs.getString(1) + " " + rs.getString(2)+ " " +
                             rs.getString(3)+ " " + rs.getString(4)+ " " +
-                            rs.getString(5)+ " " + rs.getString(6));
+                            rs.getString(5)+ " " + rs.getString(6)+ " " +
+                            rs.getString(7)+ " " + rs.getString(8)+ " " +
+                            rs.getString(9));
 
                 }
 
