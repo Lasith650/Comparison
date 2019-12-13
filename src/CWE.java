@@ -1,0 +1,6 @@
+import java.util.ArrayList;
+
+public interface CWE {
+    String getDescription();
+    ArrayList<String> getAssociatedSTRIDE();
+}
