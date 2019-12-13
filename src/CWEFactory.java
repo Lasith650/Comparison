@@ -1,7 +1,7 @@
 //This will create the required CWE instances
 public class CWEFactory {
 
-    public CWE getCWE (CWE CWEType){
+    public CWE getCWE (String CWEType){
         if (CWEType == null){
             return null;
         }else if (CWEType.equals("CWE_190")){

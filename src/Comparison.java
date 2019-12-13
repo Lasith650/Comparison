@@ -1,26 +1,13 @@
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 
 public class Comparison {
-    static String output = "";
-
-    //With this method out put will be saved as a text file
-    public static void usingBufferedWriter(String data) throws IOException {
-        String fileContent = data;
-        BufferedWriter writer = new BufferedWriter(new FileWriter("d:/Project/Comparison.txt"));
-        writer.write(fileContent);
-        writer.close();
-    }
-
-    public static void main(String[] args) {
-        Connection con = DatabaseConnection.getDatabaseConnection_instance().getConnection();
+    public ArrayList getViolatedCERTTSecurityGuidelines() {
         ArrayList<String> violatedCERTSecurityGuidelines = new ArrayList<String>();
-
         try {
-
+            Connection con = DatabaseConnection.getDatabaseConnection_instance().getConnection();
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("select * from identified_cert_security_guideline_violations_tbl");
             while (rs.next()) {
@@ -29,35 +16,27 @@ public class Comparison {
         } catch (Exception e) {
             System.out.println(e);
         }
-        for (String i : violatedCERTSecurityGuidelines) {
+        return violatedCERTSecurityGuidelines;
+    }
 
-            try {
-                Statement stmt = con.createStatement();
-                ResultSet rs = stmt.executeQuery("select * from cwe_tbl as a inner join cwe_stride_tbl as b " +
-                        "on a.cwe_id = b.cwe_id inner join stride_tbl as c " +
-                        "on b.security_control_id = c.security_control_id where a.cert_id = '" + i + "'");
-                while (rs.next()) {
-                    output = output + i + " " + rs.getString(1) + " " + rs.getString(2) + " " +
-                            rs.getString(3) + " " + rs.getString(4) + " " +
-                            rs.getString(5) + " " + rs.getString(6) + " " +
-                            rs.getString(7) + " " + rs.getString(8) + " " +
-                            rs.getString(9) + "\n";
+    public static void main(String[] args) {
+        Comparison comparison = new Comparison();
+        CERTVulnerabilityFactory certVulnerabilityFactory = new CERTVulnerabilityFactory();
+        CWEFactory cweFactory = new CWEFactory();
+        ArrayList<String> violatedCERTSecurityGuidelines = comparison.getViolatedCERTTSecurityGuidelines();
+        for (int i = 0; i < violatedCERTSecurityGuidelines.size(); i++) {
+            System.out.println(violatedCERTSecurityGuidelines.get(i));
+            CERTVulnerability certVulnerability = certVulnerabilityFactory.getCERTVulnerability(violatedCERTSecurityGuidelines.get(i));
+            ArrayList<String> associatedCWE = certVulnerability.getAssociatedCWE();
+            System.out.println(associatedCWE.size());
+            for (int x = 0; x < associatedCWE.size(); x++) {
+                System.out.println(associatedCWE.get(x));
+                CWE cwe = cweFactory.getCWE(associatedCWE.get(x));
+                ArrayList<String> associatedSTRIDE = cwe.getAssociatedSTRIDE();
+                for (String a : associatedSTRIDE) {
+                    System.out.println(a);
                 }
-            } catch (Exception e) {
-                System.out.println(e);
             }
-        }
-        try {
-            con.close();
-            ;
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-        System.out.println(output);
-        try {
-            usingBufferedWriter(output);
-        } catch (Exception e) {
-            System.out.println(e);
         }
     }
 }

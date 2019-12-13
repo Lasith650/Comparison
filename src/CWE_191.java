@@ -7,11 +7,11 @@ public class CWE_191 implements CWE {
             "Information Disclosure", "Elevation of Privilege"));
     @Override
     public String getDescription() {
-        return null;
+        return description;
     }
 
     @Override
     public ArrayList<String> getAssociatedSTRIDE() {
-        return null;
+        return associatedSTRIDE;
     }
 }
