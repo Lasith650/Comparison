@@ -23,6 +23,7 @@ public class Comparison {
         Comparison comparison = new Comparison();
         CERTVulnerabilityFactory certVulnerabilityFactory = new CERTVulnerabilityFactory();
         CWEFactory cweFactory = new CWEFactory();
+        InteractionHandler interactionHandler = new InteractionHandler();
         ArrayList<String> violatedCERTSecurityGuidelines = comparison.getViolatedCERTTSecurityGuidelines();
         for (int i = 0; i < violatedCERTSecurityGuidelines.size(); i++) {
             System.out.println(violatedCERTSecurityGuidelines.get(i));
@@ -37,6 +38,11 @@ public class Comparison {
                     System.out.println(a);
                 }
             }
+        }
+
+        ArrayList<String> tmtInteractions = interactionHandler.distinctInteractions();
+        for (String i : tmtInteractions){
+            System.out.println(i);
         }
     }
 }
