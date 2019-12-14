@@ -24,29 +24,33 @@ public class Comparison {
         CERTVulnerabilityFactory certVulnerabilityFactory = new CERTVulnerabilityFactory();
         CWEFactory cweFactory = new CWEFactory();
         InteractionHandler interactionHandler = new InteractionHandler();
+        ComparisonHandler comparisonHandler = new ComparisonHandler();
         ArrayList<String> violatedCERTSecurityGuidelines = comparison.getViolatedCERTTSecurityGuidelines();
-        for (int i = 0; i < violatedCERTSecurityGuidelines.size(); i++) {
-            System.out.println(violatedCERTSecurityGuidelines.get(i));
-            CERTVulnerability certVulnerability = certVulnerabilityFactory.getCERTVulnerability(violatedCERTSecurityGuidelines.get(i));
+
+        //Bellow are associated with the interactions
+        ArrayList<String> tmtInteractions = interactionHandler.distinctInteractions();
+        for (int x = 0; x < violatedCERTSecurityGuidelines.size(); x++) {
+            System.out.println(violatedCERTSecurityGuidelines.get(x));
+            CERTVulnerability certVulnerability = certVulnerabilityFactory.getCERTVulnerability(violatedCERTSecurityGuidelines.get(x));
             ArrayList<String> associatedCWE = certVulnerability.getAssociatedCWE();
             System.out.println(associatedCWE.size());
-            for (int x = 0; x < associatedCWE.size(); x++) {
-                System.out.println(associatedCWE.get(x));
-                CWE cwe = cweFactory.getCWE(associatedCWE.get(x));
+            for (int y = 0; y < associatedCWE.size(); y++) {
+                System.out.println(associatedCWE.get(y));
+                CWE cwe = cweFactory.getCWE(associatedCWE.get(y));
                 ArrayList<String> associatedSTRIDE = cwe.getAssociatedSTRIDE();
                 for (String a : associatedSTRIDE) {
                     System.out.println(a);
                 }
-            }
-        }
 
-        //Bellow are associated with the interactions
-        ArrayList<String> tmtInteractions = interactionHandler.distinctInteractions();
-        for (String i : tmtInteractions){
-            System.out.println(i);
-            ArrayList<String> associatedStrides = interactionHandler.associatedStrides(i);
-            for (String a : associatedStrides){
-                System.out.println(a);
+                for (String i : tmtInteractions) {
+                    System.out.println(i);
+                    ArrayList<String> associatedStrides = interactionHandler.associatedStrides(i);
+                    for (String a : associatedStrides) {
+                        System.out.println(a);
+                    }
+                    boolean answer = comparisonHandler.compare(associatedSTRIDE, associatedStrides);
+                    System.out.println(answer);
+                }
             }
         }
     }
