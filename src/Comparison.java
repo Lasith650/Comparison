@@ -25,7 +25,9 @@ public class Comparison {
         CWEFactory cweFactory = new CWEFactory();
         InteractionHandler interactionHandler = new InteractionHandler();
         ComparisonHandler comparisonHandler = new ComparisonHandler();
+        TextCreator textCreator = new TextCreator();
         ArrayList<String> violatedCERTSecurityGuidelines = comparison.getViolatedCERTTSecurityGuidelines();
+        String text = "";
 
         //Bellow are associated with the interactions
         ArrayList<String> tmtInteractions = interactionHandler.distinctInteractions();
@@ -50,8 +52,15 @@ public class Comparison {
                     }
                     boolean answer = comparisonHandler.compare(associatedSTRIDE, associatedStrides);
                     System.out.println(answer);
+                    text = text + textCreator.getOutput(answer, violatedCERTSecurityGuidelines.get(x), associatedCWE.get(y), i);
+                    System.out.println(text);
                 }
             }
+        }
+        try {
+            textCreator.usingBufferedWriter(text);
+        } catch (Exception e) {
+            System.out.println(e);
         }
     }
 }
