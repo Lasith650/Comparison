@@ -40,9 +40,14 @@ public class Comparison {
             }
         }
 
+        //Bellow are associated with the interactions
         ArrayList<String> tmtInteractions = interactionHandler.distinctInteractions();
         for (String i : tmtInteractions){
             System.out.println(i);
+            ArrayList<String> associatedStrides = interactionHandler.associatedStrides(i);
+            for (String a : associatedStrides){
+                System.out.println(a);
+            }
         }
     }
 }

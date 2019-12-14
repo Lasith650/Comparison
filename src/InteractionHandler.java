@@ -48,4 +48,21 @@ public class InteractionHandler {
         }
         return distinctInteractions;
     }
+
+    //This method will give the distinct STRIDE's for a particular interaction
+    public ArrayList<String> associatedStrides (String interaction){
+        ArrayList<String> associatedStrides = new ArrayList<String>();
+        try {
+            Connection con = DatabaseConnection.getDatabaseConnection_instance().getConnection();
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery("select distinct associated_stride from tmt_output_tbl " +
+                    "where interaction = '"+interaction+"'");
+            while (rs.next()) {
+                associatedStrides.add(rs.getString(1));
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return associatedStrides;
+    }
 }
