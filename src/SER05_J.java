@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class SER05_J implements CERTVulnerability {
+    private String description = "Do not Serialize instances of Inner Classes";
+    private ArrayList<String> associatedCWE = new ArrayList<String>(Arrays.asList("CWE_499"));
+    @Override
+    public String getDescription() {
+        return description;
+    }
+
+    @Override
+    public ArrayList<String> getAssociatedCWE() {
+        return associatedCWE;
+    }
+}
