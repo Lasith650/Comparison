@@ -3,6 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="9c3d429d-7315-4b4f-9d3e-4ba85a550eb9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Comparison.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CERTVulnerabilityFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CERTVulnerabilityFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWEFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWEFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Comparison/Comparison.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/Comparison.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Comparison/SimilarityCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/SimilarityCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Comparison/TextCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/TextCreator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CERTVulnerabilityFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CERTVulnerabilityFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWEFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWEFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comparison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comparison.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TextCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextCreator.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -26,14 +37,19 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../commons-io-2.6.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -47,7 +63,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SimilarityCalculator">
+  <component name="RunManager" selected="Application.Comparison">
     <configuration name="Comparison" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Comparison" />
       <module name="Comparison" />
@@ -71,8 +87,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SimilarityCalculator" />
         <item itemvalue="Application.Comparison" />
+        <item itemvalue="Application.SimilarityCalculator" />
         <item itemvalue="Application.ModuleThree" />
       </list>
     </recent_temporary>

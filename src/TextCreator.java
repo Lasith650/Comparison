@@ -6,10 +6,11 @@ public class TextCreator {
 
     public String getOutput(boolean result, String cert, String cwe, String interaction) {
         if (result == true) {
-            return "CERT security vulnerability : " + cert + " may occur as a result of : " + cwe + ". This may happen" +
+            return "CERT security vulnerability: " + cert + " may occur as a result of : " + cwe + ". This may happen" +
                     " as a result of the interaction : " + interaction + " indicated in the tmt output" + "\n";
         } else {
-            return "CERT security vulnerability :" + cert + "may not due to a design fault" + "\n";
+            return "CERT security vulnerability:" + cert + " may occur as a result of : " + cwe +
+                    ". But it is not a design fault" + "\n";
         }
     }
 
