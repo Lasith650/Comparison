@@ -5,6 +5,7 @@ public class CWE_486 implements CWE {
     private String description = "Comparison of Classes by Name";
     private ArrayList<String> associatedSTRIDE = new ArrayList<>(Arrays.asList("Tampering", "Information Disclosure",
             "Denial of Service"));
+    private String phase = "Implementation";
     @Override
     public String getDescription() {
         return description;
@@ -13,5 +14,10 @@ public class CWE_486 implements CWE {
     @Override
     public ArrayList<String> getAssociatedSTRIDE() {
         return associatedSTRIDE;
+    }
+
+    @Override
+    public String getPhase() {
+        return phase;
     }
 }

@@ -5,6 +5,7 @@ public class CWE_682 implements CWE {
     private String description = "Incorrect Calculation";
     private ArrayList<String> associatedSTRIDE = new ArrayList<>(Arrays.asList("Denial of Service", "Tampering",
             "Information Disclosure", "Elevation of Privilege"));
+    private String phase = "Implementation";
 
     @Override
     public String getDescription() {
@@ -14,5 +15,10 @@ public class CWE_682 implements CWE {
     @Override
     public ArrayList<String> getAssociatedSTRIDE() {
         return associatedSTRIDE;
+    }
+
+    @Override
+    public String getPhase() {
+        return phase;
     }
 }

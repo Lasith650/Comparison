@@ -5,6 +5,7 @@ public class CWE_190 implements CWE {
     private String description = "Integer Overflow or Wraparound";
     private ArrayList<String> associatedSTRIDE = new ArrayList<>(Arrays.asList("Denial of Service", "Tampering",
             "Information Disclosure", "Elevation of Privilege"));
+    private String phase = "Implementation";
     @Override
     public String getDescription() {
         return description;
@@ -13,5 +14,10 @@ public class CWE_190 implements CWE {
     @Override
     public ArrayList<String> getAssociatedSTRIDE() {
         return associatedSTRIDE;
+    }
+
+    @Override
+    public String getPhase() {
+        return phase;
     }
 }
