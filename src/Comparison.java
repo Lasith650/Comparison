@@ -37,11 +37,22 @@ public class Comparison {
         SimilarityCalculator similarityCalculator = new SimilarityCalculator();
         ComparisonReportGenerator comparisonReportGenerator = new ComparisonReportGenerator();
 
+        StringBuilder sb = new StringBuilder();
+        sb.append("<html>");
+        sb.append("<head>");
+        sb.append("<title>Comparison Report");
+        sb.append("</title>");
+        sb.append("</head>");
+        sb.append("<body style=background-color:#f2f2f2>");
+        sb.append("<h1>Comparison Report</h1>");
+
         //Bellow are associated with the interactions
         ArrayList<String> tmtInteractions = interactionHandler.distinctInteractions();
         //To get the security guideline violations list
         ArrayList<String> violatedCERTSecurityGuidelines = comparison.getViolatedCERTTSecurityGuidelines();
         for (int x = 0; x < violatedCERTSecurityGuidelines.size(); x++) {
+            //CERT Vulnerability div
+            sb.append("<div style=height:200px;background-color:#e6e6e6;padding-left:5px><h3>Violated CERT: "+violatedCERTSecurityGuidelines.get(x)+"</h3>");
             //To get the associated CWE for specific interaction
             CERTVulnerability certVulnerability = certVulnerabilityFactory.getCERTVulnerability(violatedCERTSecurityGuidelines.get(x));
             ArrayList<String> associatedCWE = certVulnerability.getAssociatedCWE();
@@ -52,6 +63,9 @@ public class Comparison {
                 CWE cwe = cweFactory.getCWE(associatedCWE.get(y));
                 String phase = cwe.getPhase();
                 if (phase == "Implementation"){
+                    sb.append("<div style=height:auto;background-color:#e6e6e6;padding-left:5px><h4>" +
+                            "This may happen as a result of violating  "+associatedCWE.get(y)+", " +
+                            "if so it is an implementation fault.</h4></div>");
                     System.out.println("is an implementation fault");
                 }else{
                     System.out.println("Design fault");
@@ -78,8 +92,17 @@ public class Comparison {
                     }
                 }
             }
+            //Ending of CERT Vulnerability Div
+            sb.append("</div>");
         }
         System.out.println(text);
-        comparisonReportGenerator.getComparisonReport();
+        //comparisonReportGenerator.getComparisonReport();
+
+        sb.append("</body>");
+        sb.append("</html>");
+        FileWriter stream = new FileWriter("d:/Project/Comparison3.html");
+        BufferedWriter out = new BufferedWriter(stream);
+        out.write(sb.toString());
+        out.close();
     }
 }
