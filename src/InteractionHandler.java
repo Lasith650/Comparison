@@ -55,7 +55,7 @@ public class InteractionHandler {
         try {
             Connection con = DatabaseConnection.getDatabaseConnection_instance().getConnection();
             Statement stmt = con.createStatement();
-            ResultSet rs = stmt.executeQuery("select distinct associated_stride from tmt_output_tbl " +
+            ResultSet rs = stmt.executeQuery("select associated_stride from tmt_output_tbl " +
                     "where interaction = '"+interaction+"'");
             while (rs.next()) {
                 associatedStrides.add(rs.getString(1));

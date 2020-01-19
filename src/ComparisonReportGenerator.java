@@ -18,7 +18,7 @@ public class ComparisonReportGenerator {
         }
         sb.append("</body>");
         sb.append("</html>");
-        FileWriter stream = new FileWriter("d:/Project/Comparison.html");
+        FileWriter stream = new FileWriter("d:/Project/Comparison2.html");
         BufferedWriter out = new BufferedWriter(stream);
         out.write(sb.toString());
         out.close();
