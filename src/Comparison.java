@@ -89,6 +89,10 @@ public class Comparison {
                                 System.out.println("Both are equal as this is not correctly implemented");
                             }
                         }
+                    }else if (count == 1){
+                        System.out.println("Count is one");
+                    }else {
+                        System.out.println("Not identified as a design fault as there are no matching interactions");
                     }
                 }
             }

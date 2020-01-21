@@ -21,4 +21,9 @@ public class CWE_682 implements CWE {
     public String getPhase() {
         return phase;
     }
+
+    @Override
+    public String getKeyWords() {
+        return null;
+    }
 }

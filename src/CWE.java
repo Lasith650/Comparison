@@ -4,4 +4,5 @@ public interface CWE {
     String getDescription();
     ArrayList<String> getAssociatedSTRIDE();
     String getPhase();
+    String getKeyWords();
 }
