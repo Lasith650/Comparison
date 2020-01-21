@@ -3,28 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="9c3d429d-7315-4b4f-9d3e-4ba85a550eb9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE_190.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE_190.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE_191.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE_191.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE_266.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE_266.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE_272.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE_272.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE_311.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE_311.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE_359.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE_359.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE_369.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE_369.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE_375.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE_375.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE_397.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE_397.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE_459.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE_459.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE_486.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE_486.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE_492.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE_492.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE_493.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE_493.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE_499.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE_499.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE_500.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE_500.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE_502.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE_502.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE_532.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE_532.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE_581.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE_581.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE_682.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE_682.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/CWE_766.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/CWE_766.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Comparison/Comparison.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/Comparison.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWEFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWEFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_190.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_190.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_191.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_191.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_266.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_266.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_272.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_272.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_311.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_311.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_359.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_359.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_369.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_369.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_375.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_375.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_397.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_397.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_459.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_459.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_486.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_486.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_492.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_492.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_493.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_493.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_499.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_499.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_500.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_500.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_502.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_502.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_532.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_532.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_581.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_581.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_682.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_682.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_766.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_766.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_820.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_820.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -5,6 +5,8 @@ public class CWE_493 implements CWE {
     private String description = "Critical Public Variable without Final Modifier";
     private ArrayList<String> associatedSTRIDE = new ArrayList<>(Arrays.asList("Tampering", "Information Disclosure"));
     private String phase = "Implementation";
+    private String keyWords = "The product has a critical public variable that is not final, which allows the " +
+            "variable to be modified to contain unexpected values";
     @Override
     public String getDescription() {
         return description;
@@ -22,6 +24,6 @@ public class CWE_493 implements CWE {
 
     @Override
     public String getKeyWords() {
-        return null;
+        return keyWords;
     }
 }

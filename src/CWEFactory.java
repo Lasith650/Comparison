@@ -44,6 +44,8 @@ public class CWEFactory {
             return new CWE_682();
         }else if (CWEType.equals("CWE_766")){
             return new CWE_766();
+        }else if (CWEType.equals("CWE_820")){
+            return new CWE_820();
         }
         return null;
     }

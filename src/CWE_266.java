@@ -5,6 +5,8 @@ public class CWE_266 implements CWE {
     private String description = "Incorrect Privilege Assignment";
     private ArrayList<String> associatedSTRIDE = new ArrayList<>(Arrays.asList("Elevation of Privilege"));
     private String phase = "Design";
+    private String keyWords = "A product incorrectly assigns a privilege to a particular actor, creating an " +
+            "unintended sphere of control for that actor";
     @Override
     public String getDescription() {
         return description;
@@ -22,6 +24,6 @@ public class CWE_266 implements CWE {
 
     @Override
     public String getKeyWords() {
-        return null;
+        return keyWords;
     }
 }

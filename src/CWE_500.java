@@ -5,6 +5,8 @@ public class CWE_500 implements CWE {
     private String description = "Public Static Field Not Marked Final";
     private ArrayList<String> associatedSTRIDE = new ArrayList<>(Arrays.asList("Tampering", "Information Disclosure"));
     private String phase = "Implementation";
+    private String keyWords = "An object contains a public static field that is not marked final, which might allow " +
+            "it to be modified in unexpected ways";
     @Override
     public String getDescription() {
         return description;
@@ -22,6 +24,6 @@ public class CWE_500 implements CWE {
 
     @Override
     public String getKeyWords() {
-        return null;
+        return keyWords;
     }
 }

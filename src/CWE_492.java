@@ -5,6 +5,8 @@ public class CWE_492 implements CWE {
     private String description = "Use of Inner Class Containing Sensitive Data";
     private ArrayList<String> associatedSTRIDE = new ArrayList<>(Arrays.asList("Information Disclosure"));
     private String phase = "Implementation";
+    private String keyWords = "Inner classes are translated into classes that are accessible at package scope and " +
+            "may expose code that the programmer intended to keep private to attackers";
     @Override
     public String getDescription() {
         return description;
@@ -22,6 +24,6 @@ public class CWE_492 implements CWE {
 
     @Override
     public String getKeyWords() {
-        return null;
+        return keyWords;
     }
 }

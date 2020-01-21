@@ -5,6 +5,8 @@ public class CWE_766 implements CWE{
     private String description = "Critical Data Element Declared Public";
     private ArrayList<String> associatedSTRIDE = new ArrayList<>(Arrays.asList("Tampering", "Information Disclosure"));
     private String phase = "Design";
+    private String keyWords = "The software declares a critical variable field or member to be public when intended " +
+            "security policy requires it to be private";
     @Override
     public String getDescription() {
         return description;
@@ -22,6 +24,6 @@ public class CWE_766 implements CWE{
 
     @Override
     public String getKeyWords() {
-        return null;
+        return keyWords;
     }
 }

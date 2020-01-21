@@ -5,6 +5,8 @@ public class CWE_820 implements CWE {
     private String description = "Missing Synchronization";
     private ArrayList<String> associatedSTRIDE = new ArrayList<>(Arrays.asList("Tampering", "Information Disclosure"));
     private String phase = "Design";
+    private String keyWords = "The software utilizes a shared resource in a concurrent manner but does not attempt " +
+            "to synchronize access to the resource";
     @Override
     public String getDescription() {
         return description;
@@ -22,6 +24,6 @@ public class CWE_820 implements CWE {
 
     @Override
     public String getKeyWords() {
-        return null;
+        return keyWords;
     }
 }

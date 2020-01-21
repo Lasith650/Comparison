@@ -5,6 +5,8 @@ public class CWE_499 implements CWE {
     private String description = "Serializable Class Containing Sensitive Data";
     private ArrayList<String> associatedSTRIDE = new ArrayList<>(Arrays.asList("Information Disclosure"));
     private String phase = "Implementation";
+    private String keyWords = "The code contains a class with sensitive data but the class does not explicitly " +
+            "deny serialization The data can be accessed by serializing the class through another class";
     @Override
     public String getDescription() {
         return description;
@@ -22,6 +24,6 @@ public class CWE_499 implements CWE {
 
     @Override
     public String getKeyWords() {
-        return null;
+        return keyWords;
     }
 }

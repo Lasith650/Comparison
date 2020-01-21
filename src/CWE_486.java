@@ -6,6 +6,8 @@ public class CWE_486 implements CWE {
     private ArrayList<String> associatedSTRIDE = new ArrayList<>(Arrays.asList("Tampering", "Information Disclosure",
             "Denial of Service"));
     private String phase = "Implementation";
+    private String keyWords = "The program compares classes by name, which can cause it to use the wrong class when " +
+            "multiple classes can have the same name";
     @Override
     public String getDescription() {
         return description;
@@ -23,6 +25,6 @@ public class CWE_486 implements CWE {
 
     @Override
     public String getKeyWords() {
-        return null;
+        return keyWords;
     }
 }

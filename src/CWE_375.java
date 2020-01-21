@@ -5,6 +5,8 @@ public class CWE_375 implements CWE {
     private String description = "Returning a Mutable Object to an Untrusted Caller";
     private ArrayList<String> associatedSTRIDE = new ArrayList<>(Arrays.asList("Tampering", "Elevation of Privilege"));
     private String phase = "Implementation";
+    private String keyWords = "Sending non-cloned mutable data as a return value may result in that data being " +
+            "altered or deleted by the calling function";
     @Override
     public String getDescription() {
         return description;
@@ -22,6 +24,6 @@ public class CWE_375 implements CWE {
 
     @Override
     public String getKeyWords() {
-        return null;
+        return keyWords;
     }
 }

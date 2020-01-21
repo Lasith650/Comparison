@@ -5,6 +5,7 @@ public class CWE_581 implements CWE {
     private String description = "Object Model Violation: Just One of Equals and Hashcode Defined";
     private ArrayList<String> associatedSTRIDE = new ArrayList<>(Arrays.asList("Tampering"));
     private String phase = "Implementation";
+    private String keyWords = "The software does not maintain equal hash codes for equal objects";
     @Override
     public String getDescription() {
         return description;
@@ -22,6 +23,6 @@ public class CWE_581 implements CWE {
 
     @Override
     public String getKeyWords() {
-        return null;
+        return keyWords;
     }
 }

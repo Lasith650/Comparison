@@ -5,6 +5,8 @@ public class CWE_532 implements CWE {
     private String description = "Inclusion of Sensitive Information in Log Files";
     private ArrayList<String> associatedSTRIDE = new ArrayList<>(Arrays.asList("Information Disclosure"));
     private String phase = "Design";
+    private String keyWords = "Information written to log files can be of a sensitive nature and give valuable " +
+            "guidance to an attacker or expose sensitive user information";
     @Override
     public String getDescription() {
         return description;
@@ -22,6 +24,6 @@ public class CWE_532 implements CWE {
 
     @Override
     public String getKeyWords() {
-        return null;
+        return keyWords;
     }
 }

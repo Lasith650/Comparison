@@ -6,6 +6,9 @@ public class CWE_190 implements CWE {
     private ArrayList<String> associatedSTRIDE = new ArrayList<>(Arrays.asList("Denial of Service", "Tampering",
             "Information Disclosure", "Elevation of Privilege"));
     private String phase = "Implementation";
+    private String keyWords = "The software performs a calculation that can produce an integer overflow or wraparound, " +
+            "when the logic assumes that the resulting value will always be larger than the original value. This can " +
+            "introduce other weaknesses when the calculation is used for resource management or execution control.";
     @Override
     public String getDescription() {
         return description;
@@ -23,6 +26,6 @@ public class CWE_190 implements CWE {
 
     @Override
     public String getKeyWords() {
-        return null;
+        return keyWords;
     }
 }
