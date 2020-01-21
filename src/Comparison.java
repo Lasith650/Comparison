@@ -1,8 +1,4 @@
-import org.apache.commons.io.FileUtils;
-
-import javax.swing.*;
 import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.Connection;
@@ -24,6 +20,32 @@ public class Comparison {
             System.out.println(e);
         }
         return violatedCERTSecurityGuidelines;
+    }
+
+    public String getInteractionConcatString(String interaction, ArrayList<String> associatedSTRIDE){
+        String concatString = "";
+        for (int i = 0 ; i < associatedSTRIDE.size() ; i++) {
+            ArrayList<String> descriptions = new ArrayList<String>();
+            System.out.println(associatedSTRIDE.get(i));
+
+            try {
+                Connection con = DatabaseConnection.getDatabaseConnection_instance().getConnection();
+                Statement stmt = con.createStatement();
+                ResultSet rs = stmt.executeQuery("select associated_stride_description from tmt_output_tbl where interaction='" + interaction + "' && associated_stride='" + associatedSTRIDE.get(i) + "'");
+                while (rs.next()) {
+                    descriptions.add(rs.getString(1));
+                }
+                for (String x : descriptions) {
+                    concatString = concatString + x + " ";
+                }
+
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+        }
+        System.out.println("bellow is the concatString");
+        System.out.println(concatString);
+        return concatString;
     }
 
     public static void main(String[] args) throws IOException {
@@ -57,6 +79,7 @@ public class Comparison {
             CERTVulnerability certVulnerability = certVulnerabilityFactory.getCERTVulnerability(violatedCERTSecurityGuidelines.get(x));
             ArrayList<String> associatedCWE = certVulnerability.getAssociatedCWE();
             for (int y = 0; y < associatedCWE.size(); y++) {
+                System.out.println(associatedCWE.get(y));
                 //To find whether there are more than one interaction which will match one CWE, count and matchingInteractions are used is used
                 int count = 0;
                 ArrayList<String> matchingInteractions = new ArrayList<String>();
@@ -83,12 +106,25 @@ public class Comparison {
                     }
                     //Add comparing the descriptions part here
                     if (count > 1) {
+                        //to find the one with the most similarity matching index is been used
+                        int highestSimilarityIndex = 0;
                         System.out.println("Count is more than 1");
                         for (int i = 0; i < matchingInteractions.size() - 1; i++) {
-                            if (similarityCalculator.getCosineSimilarityValue() == similarityCalculator.getCosineSimilarityValue()) {
-                                System.out.println("Both are equal as this is not correctly implemented");
+                            //This string contains the total details for highest similarity index for the interactions
+                            String description1 = comparison.getInteractionConcatString(matchingInteractions.get(highestSimilarityIndex),associatedSTRIDE);
+                            //This string contains the total details for highest similarity index for the interactions
+                            String description2 = comparison.getInteractionConcatString(matchingInteractions.get(i+1),associatedSTRIDE);
+                            String description3 = cwe.getKeyWords();
+                            System.out.println("*************"+description1);
+                            System.out.println("*************"+description2);
+                            System.out.println("*************"+description3);
+
+                            if (similarityCalculator.getCosineSimilarityValue(description1 , description3) < similarityCalculator.getCosineSimilarityValue(description2 , description3)) {
+                                highestSimilarityIndex = highestSimilarityIndex + 1;
                             }
                         }
+                        //this will output the best matching interaction
+                        System.out.println("most matching interaction is : " + matchingInteractions.get(highestSimilarityIndex));
                     }else if (count == 1){
                         System.out.println("Count is one");
                     }else {
@@ -108,5 +144,6 @@ public class Comparison {
         BufferedWriter out = new BufferedWriter(stream);
         out.write(sb.toString());
         out.close();
+
     }
 }
