@@ -74,11 +74,14 @@ public class Comparison {
         ArrayList<String> violatedCERTSecurityGuidelines = comparison.getViolatedCERTTSecurityGuidelines();
         for (int x = 0; x < violatedCERTSecurityGuidelines.size(); x++) {
             //CERT Vulnerability div
-            sb.append("<div style=height:200px;background-color:#e6e6e6;padding-left:5px><h3>Violated CERT: "+violatedCERTSecurityGuidelines.get(x)+"</h3>");
+
             //To get the associated CWE for specific interaction
             CERTVulnerability certVulnerability = certVulnerabilityFactory.getCERTVulnerability(violatedCERTSecurityGuidelines.get(x));
+            sb.append("<div style=height:auto;background-color:#e6e6e6;padding-left:5px><h3>Violated CERT: <a href="+certVulnerability.getHref()+">"+violatedCERTSecurityGuidelines.get(x)+"</a></h3>");
             ArrayList<String> associatedCWE = certVulnerability.getAssociatedCWE();
             for (int y = 0; y < associatedCWE.size(); y++) {
+                //Associated CWE div
+                sb.append("<div style=height:auto;background-color:#e6e6e6;padding-left:5px><h3>This may happen as a result of "+associatedCWE.get(y)+"</h3>");
                 System.out.println(associatedCWE.get(y));
                 //To find whether there are more than one interaction which will match one CWE, count and matchingInteractions are used is used
                 int count = 0;
@@ -87,7 +90,6 @@ public class Comparison {
                 String phase = cwe.getPhase();
                 if (phase == "Implementation"){
                     sb.append("<div style=height:auto;background-color:#e6e6e6;padding-left:5px><h4>" +
-                            "This may happen as a result of violating  "+associatedCWE.get(y)+", " +
                             "if so it is an implementation fault.</h4></div>");
                     System.out.println("is an implementation fault");
                 }else{
@@ -123,14 +125,25 @@ public class Comparison {
                                 highestSimilarityIndex = highestSimilarityIndex + 1;
                             }
                         }
+                        //Div associated if there are more than one matching interaction
+                        sb.append("<div style=height:auto;background-color:#e6e6e6;padding-left:5px><h4>" +
+                                "if so it may occur as a result of a design fault associated with Interaction: "+matchingInteractions.get(highestSimilarityIndex)+"</h4></div>");
                         //this will output the best matching interaction
                         System.out.println("most matching interaction is : " + matchingInteractions.get(highestSimilarityIndex));
                     }else if (count == 1){
+                        //Div associated if there is only one matching interaction
+                        sb.append("<div style=height:auto;background-color:#e6e6e6;padding-left:5px><h4>" +
+                                "if so it may occur as a result of a design fault associated with Interaction: "+matchingInteractions.get(0)+"</h4></div>");
                         System.out.println("Count is one");
                     }else {
+                        //Div associated if there is no matching interaction
+                        sb.append("<div style=height:auto;background-color:#e6e6e6;padding-left:5px><h4>" +
+                                "if so it may not due to a design fault</h4></div>");
                         System.out.println("Not identified as a design fault as there are no matching interactions");
                     }
                 }
+                //Ending of Associated CWE Div
+                sb.append("</div>");
             }
             //Ending of CERT Vulnerability Div
             sb.append("</div>");
