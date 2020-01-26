@@ -7,6 +7,7 @@ public class CWE_459 implements CWE {
     private String phase = "Design";
     private String keyWords = "The software does not properly clean up and remove temporary or supporting resources " +
             "after they have been used";
+    private String href = "https://cwe.mitre.org/data/definitions/459.html";
     @Override
     public String getDescription() {
         return description;
@@ -25,5 +26,10 @@ public class CWE_459 implements CWE {
     @Override
     public String getKeyWords() {
         return keyWords;
+    }
+
+    @Override
+    public String getHref() {
+        return href;
     }
 }

@@ -7,6 +7,7 @@ public class CWE_272 implements CWE {
     private String phase = "Design";
     private String keyWords = "The elevated privilege level required to perform operations such as chroot() " +
             "should be dropped immediately after the operation is performed";
+    private String href = "https://cwe.mitre.org/data/definitions/272.html";
     @Override
     public String getDescription() {
         return description;
@@ -25,5 +26,10 @@ public class CWE_272 implements CWE {
     @Override
     public String getKeyWords() {
         return keyWords;
+    }
+
+    @Override
+    public String getHref() {
+        return href;
     }
 }

@@ -9,6 +9,7 @@ public class CWE_682 implements CWE {
     private String keyWords = "The software calls a function, procedure, or routine, but the caller specifies the " +
             "wrong variable or reference as one of the arguments, which may lead to undefined behavior and " +
             "resultant weaknesses";
+    private String href = "https://cwe.mitre.org/data/definitions/682.html";
 
     @Override
     public String getDescription() {
@@ -28,5 +29,10 @@ public class CWE_682 implements CWE {
     @Override
     public String getKeyWords() {
         return keyWords;
+    }
+
+    @Override
+    public String getHref() {
+        return href;
     }
 }

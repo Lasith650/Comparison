@@ -5,4 +5,5 @@ public interface CWE {
     ArrayList<String> getAssociatedSTRIDE();
     String getPhase();
     String getKeyWords();
+    String getHref();
 }

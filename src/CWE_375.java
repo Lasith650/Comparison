@@ -7,6 +7,7 @@ public class CWE_375 implements CWE {
     private String phase = "Implementation";
     private String keyWords = "Sending non-cloned mutable data as a return value may result in that data being " +
             "altered or deleted by the calling function";
+    private String href = "https://cwe.mitre.org/data/definitions/375.html";
     @Override
     public String getDescription() {
         return description;
@@ -25,5 +26,10 @@ public class CWE_375 implements CWE {
     @Override
     public String getKeyWords() {
         return keyWords;
+    }
+
+    @Override
+    public String getHref() {
+        return href;
     }
 }

@@ -7,6 +7,7 @@ public class CWE_766 implements CWE{
     private String phase = "Design";
     private String keyWords = "The software declares a critical variable field or member to be public when intended " +
             "security policy requires it to be private";
+    private String href = "https://cwe.mitre.org/data/definitions/766.html";
     @Override
     public String getDescription() {
         return description;
@@ -25,5 +26,10 @@ public class CWE_766 implements CWE{
     @Override
     public String getKeyWords() {
         return keyWords;
+    }
+
+    @Override
+    public String getHref() {
+        return href;
     }
 }

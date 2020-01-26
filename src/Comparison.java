@@ -77,7 +77,7 @@ public class Comparison {
 
             //To get the associated CWE for specific interaction
             CERTVulnerability certVulnerability = certVulnerabilityFactory.getCERTVulnerability(violatedCERTSecurityGuidelines.get(x));
-            sb.append("<div style=height:auto;background-color:#e6e6e6;padding-left:5px><h3>Violated CERT: <a href="+certVulnerability.getHref()+">"+violatedCERTSecurityGuidelines.get(x)+"</a></h3>");
+            sb.append("<div style=height:auto;background-color:#e6e6e6;padding-left:5px><h3>Violated CERT: <a href="+certVulnerability.getHref()+">"+violatedCERTSecurityGuidelines.get(x)+"</a> ("+certVulnerability.getDescription()+")</h3>");
             ArrayList<String> associatedCWE = certVulnerability.getAssociatedCWE();
             for (int y = 0; y < associatedCWE.size(); y++) {
                 //Associated CWE div

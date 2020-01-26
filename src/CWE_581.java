@@ -6,6 +6,7 @@ public class CWE_581 implements CWE {
     private ArrayList<String> associatedSTRIDE = new ArrayList<>(Arrays.asList("Tampering"));
     private String phase = "Implementation";
     private String keyWords = "The software does not maintain equal hash codes for equal objects";
+    private String href = "https://cwe.mitre.org/data/definitions/581.html";
     @Override
     public String getDescription() {
         return description;
@@ -24,5 +25,10 @@ public class CWE_581 implements CWE {
     @Override
     public String getKeyWords() {
         return keyWords;
+    }
+
+    @Override
+    public String getHref() {
+        return href;
     }
 }

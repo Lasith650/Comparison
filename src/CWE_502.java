@@ -7,6 +7,7 @@ public class CWE_502 implements CWE {
     private String phase = "Design";
     private String keyWords = "The application de-serializes untrusted data without sufficiently verifying that the " +
             "resulting data will be valid";
+    private String href = "https://cwe.mitre.org/data/definitions/502.html";
     @Override
     public String getDescription() {
         return description;
@@ -25,5 +26,10 @@ public class CWE_502 implements CWE {
     @Override
     public String getKeyWords() {
         return keyWords;
+    }
+
+    @Override
+    public String getHref() {
+        return href;
     }
 }

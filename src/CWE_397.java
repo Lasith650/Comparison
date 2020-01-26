@@ -7,6 +7,7 @@ public class CWE_397 implements CWE {
     private String phase = "Design";
     private String keyWords = "Throwing overly broad exceptions promotes complex error handling code that is more " +
             "likely to contain security vulnerabilities";
+    private String href = "https://cwe.mitre.org/data/definitions/397.html";
     @Override
     public String getDescription() {
         return description;
@@ -25,5 +26,10 @@ public class CWE_397 implements CWE {
     @Override
     public String getKeyWords() {
         return keyWords;
+    }
+
+    @Override
+    public String getHref() {
+        return href;
     }
 }

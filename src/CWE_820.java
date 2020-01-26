@@ -7,6 +7,7 @@ public class CWE_820 implements CWE {
     private String phase = "Design";
     private String keyWords = "The software utilizes a shared resource in a concurrent manner but does not attempt " +
             "to synchronize access to the resource";
+    private String href = "https://cwe.mitre.org/data/definitions/820.html";
     @Override
     public String getDescription() {
         return description;
@@ -25,5 +26,10 @@ public class CWE_820 implements CWE {
     @Override
     public String getKeyWords() {
         return keyWords;
+    }
+
+    @Override
+    public String getHref() {
+        return href;
     }
 }

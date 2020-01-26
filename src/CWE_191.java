@@ -8,6 +8,7 @@ public class CWE_191 implements CWE {
     private String phase = "Implementation";
     private String keyWords = "The product subtracts one value from another, such that the result is less than the " +
             "minimum allowable integer value, which produces a value that is not equal to the correct result";
+    private String href = "https://cwe.mitre.org/data/definitions/191.html";
     @Override
     public String getDescription() {
         return description;
@@ -26,5 +27,10 @@ public class CWE_191 implements CWE {
     @Override
     public String getKeyWords() {
         return keyWords;
+    }
+
+    @Override
+    public String getHref() {
+        return href;
     }
 }

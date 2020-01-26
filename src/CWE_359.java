@@ -8,6 +8,7 @@ public class CWE_359 implements CWE {
     private String keyWords = "The software does not properly prevent private data from being accessed by actors who " +
             "either are not explicitly authorized to access the data or do not have the implicit consent of the " +
             "people to which the data is related";
+    private String href = "https://cwe.mitre.org/data/definitions/359.html";
     @Override
     public String getDescription() {
         return description;
@@ -26,5 +27,10 @@ public class CWE_359 implements CWE {
     @Override
     public String getKeyWords() {
         return keyWords;
+    }
+
+    @Override
+    public String getHref() {
+        return href;
     }
 }

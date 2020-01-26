@@ -4,24 +4,14 @@
     <list default="true" id="9c3d429d-7315-4b4f-9d3e-4ba85a550eb9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Comparison/Comparison.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Comparison/Comparison.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CERTVulnerability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CERTVulnerability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_190.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_190.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_191.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_191.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_266.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_266.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_272.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_272.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_311.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_311.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CWE_359.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CWE_359.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Comparison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comparison.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ERR04_J.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ERR04_J.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ERR07_J.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ERR07_J.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FIO13_J.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FIO13_J.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LCK05_J.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LCK05_J.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MET09_J.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MET09_J.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MSC00_J.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MSC00_J.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NUM00_J.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NUM00_J.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NUM02_J.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NUM02_J.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OBJ01_J.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OBJ01_J.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OBJ05_J.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OBJ05_J.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OBJ08_J.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OBJ08_J.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OBJ09_J.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OBJ09_J.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OBJ10_J.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OBJ10_J.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SEC00_J.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SEC00_J.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SER01_J.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SER01_J.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SER05_J.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SER05_J.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

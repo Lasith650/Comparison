@@ -9,6 +9,7 @@ public class CWE_190 implements CWE {
     private String keyWords = "The software performs a calculation that can produce an integer overflow or wraparound, " +
             "when the logic assumes that the resulting value will always be larger than the original value. This can " +
             "introduce other weaknesses when the calculation is used for resource management or execution control.";
+    private String href = "https://cwe.mitre.org/data/definitions/190.html";
     @Override
     public String getDescription() {
         return description;
@@ -27,5 +28,10 @@ public class CWE_190 implements CWE {
     @Override
     public String getKeyWords() {
         return keyWords;
+    }
+
+    @Override
+    public String getHref() {
+        return href;
     }
 }

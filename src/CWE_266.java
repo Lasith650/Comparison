@@ -7,6 +7,7 @@ public class CWE_266 implements CWE {
     private String phase = "Design";
     private String keyWords = "A product incorrectly assigns a privilege to a particular actor, creating an " +
             "unintended sphere of control for that actor";
+    private String href = "https://cwe.mitre.org/data/definitions/266.html";
     @Override
     public String getDescription() {
         return description;
@@ -25,5 +26,10 @@ public class CWE_266 implements CWE {
     @Override
     public String getKeyWords() {
         return keyWords;
+    }
+
+    @Override
+    public String getHref() {
+        return href;
     }
 }
