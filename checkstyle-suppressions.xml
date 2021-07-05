@@ -12,5 +12,5 @@
         "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
 <suppressions>
     <suppress checks="MissingJavadocMethodCheck"
-        files="*.java"/>
+        files=".java"/>
 </suppressions>
