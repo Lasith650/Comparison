@@ -111,6 +111,7 @@ page at http://checkstyle.sourceforge.net/config.html -->
             <!-- This ensures that static imports go to the end. -->
             <property name="option" value="bottom" />
             <property name="tokens" value="STATIC_IMPORT, IMPORT" />
+            <property name="separateLineBetweenGroups" value="true"/>
         </module>
 
         <module name="IllegalImport">
@@ -119,9 +120,9 @@ page at http://checkstyle.sourceforge.net/config.html -->
 
         <module name="UnusedImports" />
 
-        <module name="CustomImportOrder">
-            <property name="separateLineBetweenGroups" value="true"/>
-        </module>
+<!--        <module name="CustomImportOrder">-->
+<!--            <property name="separateLineBetweenGroups" value="true"/>-->
+<!--        </module>-->
 
         <!--
 

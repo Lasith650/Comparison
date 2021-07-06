@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c3d429d-7315-4b4f-9d3e-4ba85a550eb9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.github/linters/sun_checks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.azure/analytics-alert-api-linter.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.azure/analytics-alert-api-linter.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ComparisonHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComparisonHandler.java" afterDir="false" />
     </list>
@@ -56,8 +58,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/.github/linters" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/.azure" />
     </key>
   </component>
@@ -119,7 +121,7 @@
       <workItem from="1576310919683" duration="22209000" />
       <workItem from="1576432494945" duration="870000" />
       <workItem from="1625471187465" duration="14972000" />
-      <workItem from="1625547912793" duration="5247000" />
+      <workItem from="1625547912793" duration="5611000" />
     </task>
     <servers />
   </component>
