@@ -8,6 +8,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.wso2.choreo.analytics.alert.api.security.JWTUserDetails;
+
 import java.util.Optional;
 
 public class ComparisonHandler {
