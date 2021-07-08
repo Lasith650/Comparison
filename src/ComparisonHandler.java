@@ -1,15 +1,14 @@
 import java.util.ArrayList;
-import org.apache.logging.log4j.core.LogEvent;
-import org.apache.logging.log4j.core.config.plugins.Plugin;
-import org.apache.logging.log4j.core.pattern.ConverterKeys;
-import org.apache.logging.log4j.core.pattern.LogEventPatternConverter;
-import org.apache.logging.log4j.core.pattern.PatternConverter;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContext;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.wso2.choreo.analytics.alert.api.security.JWTUserDetails;
-
+import java.io.IOException;
 import java.util.Optional;
+import java.util.function.Predicate;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import javax.servlet.FilterChain;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 public class ComparisonHandler {
     public boolean compare(ArrayList<String> associated_strides_for_cwe,
