@@ -13,5 +13,6 @@
 <suppressions>
     <suppress checks="MissingJavadocMethodCheck"
               files=".java"/>
-    <suppress message="Extra separation in import group before 'javax.(.*?)' [ImportOrder]"/>
+    <suppress message="Extra separation in import group before 'javax.(.*?)' [ImportOrder]"
+              files=".java"/>
 </suppressions>
