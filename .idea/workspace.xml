@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c3d429d-7315-4b4f-9d3e-4ba85a550eb9" name="Default Changelist" comment="" />
+    <list default="true" id="9c3d429d-7315-4b4f-9d3e-4ba85a550eb9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkstyle-suppressions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle-suppressions.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../sampleToLogEvents/apim-analytics-publisher" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -53,9 +56,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources" />
       <recent name="$PROJECT_DIR$/.github/linters" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/.azure" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/template" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Comparison">
@@ -76,6 +83,19 @@
     <configuration name="SimilarityCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SimilarityCalculator" />
       <module name="Comparison" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,7 +125,7 @@
       <workItem from="1625471187465" duration="14972000" />
       <workItem from="1625547912793" duration="10926000" />
       <workItem from="1625629680721" duration="18343000" />
-      <workItem from="1626234536644" duration="798000" />
+      <workItem from="1626234536644" duration="2851000" />
     </task>
     <servers />
   </component>

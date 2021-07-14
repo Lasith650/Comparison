@@ -15,4 +15,6 @@
               files=".java"/>
     <suppress checks="ImportOrder"
               files=".java"/>
+<!--    <suppress checks="*"-->
+<!--              files="[\\/]resources[\\/]template[\\/]custom_server_GraphQLDataFetchers.vm.java"/>-->
 </suppressions>
