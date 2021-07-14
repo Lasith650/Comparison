@@ -13,6 +13,6 @@
 <suppressions>
     <suppress checks="MissingJavadocMethodCheck"
               files=".java"/>
-<!--    <suppress checks="ImportOrder"-->
-<!--              files=".java"/>-->
+    <suppress checks="ImportOrder"
+              files=".java"/>
 </suppressions>
