@@ -14,6 +14,5 @@
     <suppress checks="MissingJavadocMethodCheck"
               files=".java"/>
 <!--    <suppress checks="ImportOrder"-->
-<!--              files=".java"-->
-<!--              message="Extra separation in import group before"/>-->
+<!--              files=".java"/>-->
 </suppressions>
