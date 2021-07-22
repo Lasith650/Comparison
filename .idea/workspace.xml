@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9c3d429d-7315-4b4f-9d3e-4ba85a550eb9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkstyle-suppressions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle-suppressions.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,19 +86,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Comparison" />
@@ -125,7 +111,7 @@
       <workItem from="1625471187465" duration="14972000" />
       <workItem from="1625547912793" duration="10926000" />
       <workItem from="1625629680721" duration="18343000" />
-      <workItem from="1626234536644" duration="4353000" />
+      <workItem from="1626234536644" duration="5031000" />
     </task>
     <servers />
   </component>
