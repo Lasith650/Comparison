@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9c3d429d-7315-4b4f-9d3e-4ba85a550eb9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.azure/dev-end-to-end-tests-cypress.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.azure/dev-end-to-end-tests-cypress.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../smokeSuite/dev2/choreo-apim-analytics-control-plane" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -114,7 +115,7 @@
       <workItem from="1625629680721" duration="18343000" />
       <workItem from="1626234536644" duration="5031000" />
       <workItem from="1626934627124" duration="3179000" />
-      <workItem from="1629256477242" duration="1245000" />
+      <workItem from="1629256477242" duration="3139000" />
     </task>
     <servers />
   </component>
