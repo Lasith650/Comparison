@@ -1,0 +1,8 @@
+{
+    "name": "Application",
+    "throttlingPolicy": "Unlimited",
+    "description": "",
+    "tokenType": "JWT",
+    "groups": null,
+    "attributes": {}
+}

@@ -1,0 +1,23 @@
+{
+    "keyType": "PRODUCTION",
+    "grantTypesToBeSupported": [
+        "refresh_token",
+        "urn:ietf:params:oauth:grant-type:saml2-bearer",
+        "password",
+        "client_credentials",
+        "iwa:ntlm",
+        "urn:ietf:params:oauth:grant-type:jwt-bearer"
+    ],
+    "callbackUrl": "",
+    "additionalProperties": {
+        "application_access_token_expiry_time": "N/A",
+        "user_access_token_expiry_time": "N/A",
+        "refresh_token_expiry_time": "N/A",
+        "id_token_expiry_time": "N/A"
+    },
+    "keyManager": "{{keyManagerId}}",
+    "validityTime": 3600,
+    "scopes": [
+        "default"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "defaultCommandTimeout": 30000,
+    "chromeWebSecurity": false,
+    "testFiles": [
+        "alert-config-add.ts",
+        "apim-server-start.ts",
+        "query-api.ts",
+        "alert-config-remove.ts",
+        "apim-server-stop.ts"
+    ],
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": true,
+        "json": true
+    },
+    "port": 9000
+}
